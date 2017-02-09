@@ -141,7 +141,7 @@ public class AdminActivityLogPageData extends PageData {
     }
 
     /**
-     * Creates a QueryParameters object used for filtering
+     * Creates a QueryParameters object used for filtering.
      */
     public void generateQueryParameters(String query) {
         filterQuery = query.trim();
@@ -174,8 +174,7 @@ public class AdminActivityLogPageData extends PageData {
     }
 
     /**
-     * Performs the actual filtering, based on QueryParameters
-     * returns false if the logEntry fails the filtering process
+     * Performs the actual filtering, based on QueryParameters.
      */
     public ActivityLogEntry filterLogs(ActivityLogEntry logEntry) {
         if (!logEntry.toShow()) {
