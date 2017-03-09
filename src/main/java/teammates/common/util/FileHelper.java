@@ -24,6 +24,7 @@ public final class FileHelper {
      * Reads the contents of a file in the {@code resources} folder.
      * @param file The file name, which must be in the {@code resources} folder.
      */
+    @SuppressWarnings("PMD.UnnecessaryLocalBeforeReturn") // local variable needed for resource cleanup
     public static String readResourceFile(String file) {
         InputStream is = getResourceAsStream(file);
         Scanner scanner = new Scanner(is, Const.SystemParams.ENCODING);

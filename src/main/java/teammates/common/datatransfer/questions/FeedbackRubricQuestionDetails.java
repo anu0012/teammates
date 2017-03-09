@@ -26,11 +26,11 @@ public class FeedbackRubricQuestionDetails extends FeedbackQuestionDetails {
     private static final Logger log = Logger.getLogger();
     private static final String STATISTICS_NO_VALUE_STRING = "-";
 
-    private boolean hasAssignedWeights;
-    private List<Double> rubricWeights;
-    private int numOfRubricChoices;
+    boolean hasAssignedWeights;
+    List<Double> rubricWeights;
+    int numOfRubricChoices;
+    int numOfRubricSubQuestions;
     private List<String> rubricChoices;
-    private int numOfRubricSubQuestions;
     private List<String> rubricSubQuestions;
     private List<List<String>> rubricDescriptions;
 
