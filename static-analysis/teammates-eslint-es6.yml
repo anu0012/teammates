@@ -1,0 +1,16 @@
+env:
+    browser: true
+    jquery: true
+    qunit: true
+    es6: true
+
+extends:
+    - airbnb-base
+
+rules:
+
+    # enforce consistent indentation
+    indent: ["error", 4]
+
+    # enforce a maximum line length
+    max-len: ["error", 125]
